@@ -103,7 +103,7 @@ public class GameConfig {
     private ItemConfig itemConfig;
 
     @Setting(value = "blockArea")
-    private Area blockArea;
+    private BoundaryArea blockArea;
 
     @Setting(value = "mobSpawnAreas")
     private final List<MobSpawnArea> mobSpawnAreas = Lists.newArrayList();
@@ -200,9 +200,9 @@ public class GameConfig {
         return itemConfig;
     }
 
-    public Area getBlockArea() {
+    public BoundaryArea getBlockArea() {
         if (blockArea == null) {
-            blockArea = new Area();
+            blockArea = new BoundaryArea();
         }
         return blockArea;
     }

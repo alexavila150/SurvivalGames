@@ -34,7 +34,7 @@ import ninja.leaping.configurate.objectmapping.Setting;
 import ninja.leaping.configurate.objectmapping.serialize.ConfigSerializable;
 
 @ConfigSerializable
-public class Area {
+public class BoundaryArea {
 
     @Setting(value = "lesser-boundary", comment = "Lesser Map boundary")
     private Vector3d lesserBoundary;

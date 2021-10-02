@@ -38,6 +38,7 @@ public abstract class SurvivalGameEvent extends AbstractEvent {
     private final SurvivalGame survivalGame;
 
     SurvivalGameEvent(Cause cause, SurvivalGame survivalGame) {
+        super();
         this.cause = checkNotNull(cause, "cause");
         this.survivalGame = checkNotNull(survivalGame, "survivalGame");
     }

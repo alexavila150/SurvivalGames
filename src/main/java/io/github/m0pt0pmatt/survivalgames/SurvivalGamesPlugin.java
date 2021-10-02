@@ -129,10 +129,8 @@ public class SurvivalGamesPlugin {
 
         File configDirectory = new File(sharedRootConfig.toFile(), "survival-games");
 
-        if (!configDirectory.exists()) {
-            if (!configDirectory.mkdir()) {
-                LOGGER.error("Could not create config directory!");
-            }
+        if (!configDirectory.exists() && !configDirectory.mkdir()) {
+            LOGGER.error("Could not create config directory!");
         }
 
         CONFIG_DIRECTORY = sharedRootConfig.resolve("survival-games");

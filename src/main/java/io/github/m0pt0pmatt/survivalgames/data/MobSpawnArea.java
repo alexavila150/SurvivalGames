@@ -32,7 +32,7 @@ import ninja.leaping.configurate.objectmapping.serialize.ConfigSerializable;
 import org.spongepowered.api.entity.EntityType;
 
 @ConfigSerializable
-public class MobSpawnArea extends Area {
+public class MobSpawnArea extends BoundaryArea {
 
     @Setting(value = "id")
     private UUID id = UUID.randomUUID();
